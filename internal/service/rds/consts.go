@@ -33,6 +33,7 @@ const (
 const (
 	ClusterSnapshotStatusAvailable = "available"
 	ClusterSnapshotStatusCreating  = "creating"
+	ClusterSnapshotStatusCopying   = "copying"
 )
 
 const (

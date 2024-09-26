@@ -103,6 +103,14 @@ func (p *servicePackage) SDKResources(ctx context.Context) []*types.ServicePacka
 			},
 		},
 		{
+			Factory:  ResourceClusterSnapshotCopy,
+			TypeName: "aws_db_cluster_snapshot_copy",
+			Name:     "DB Cluster Snapshot Copy",
+			Tags: &types.ServicePackageResourceTags{
+				IdentifierAttribute: "target_db_snapshot_identifier",
+			},
+		},
+		{
 			Factory:  ResourceEventSubscription,
 			TypeName: "aws_db_event_subscription",
 			Name:     "Event Subscription",
